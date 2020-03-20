@@ -1,13 +1,13 @@
-<?php include_once('error.php');?>
+<?php include_once('error.php'); ?>
 
-<?php $id=$_GET['id'];?>
+<?php $id = $_GET['id']; ?>
 
 <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-  <span class="text-uppercase page-title"> Reportes </span>
-  <h3 class="page-title"> GENERAL DE MEDICAMENTOS</h3>
+    <span class="text-uppercase page-title"> Reportes </span>
+    <h3 class="page-title"> GENERAL DE MEDICAMENTOS</h3>
 </div>
 <div style="text-align: right;width:1500px">
-<a href="index.php?id=<?php echo $id; ?>">Regresar</a>
+    <a href="index.php?id=<?php echo $id; ?>">Regresar</a>
 </div>
 <!Doctype html>
 <html class="no-js h-100" lang="es">
@@ -31,65 +31,24 @@
 
 <body class="h-100">
     <form class="add-new-post" method="post" action="reportegeneral.php?id=<?php echo $id; ?>">
-        <!--<?php
-        include('mostrar-proveedores.php');
-        ?>
-        <br>Proveedor:
-        <select id="proveedor" name="id" class="mimi form-control-lg mb-12" required onchange="cambio()">
-            <option value="Seleccione Proveedor">Seleccione Proveedor</option>
-            <?php
-            while ($row = mysqli_fetch_row($mostrarsoloregistrados)) { 
-            ?>
-                <option value="<?php echo "$row[4]"; ?>"><?php echo "$row[4]"; ?></option>
-            <?php } ?>
-        </select>
-        <input type="submit" value="Buscar"/>
-        <br>
-        <input id="id" style="visibility:hidden;" type="text" />-->
-        Procedimiento: 
-        <select id="proveedor" name="proceso" class="mimi form-control-lg mb-12" required onchange="cambio()">
-            <option value="Seleccione Proveedor">Seleccione Proceso</option>
-            <?php
-                $mostrarsoloregistrados= mysqli_query($link, "SELECT * FROM catalogo_procesos");
-            while ($row = mysqli_fetch_row($mostrarsoloregistrados)) {
-            ?>
-                <option value="<?php echo "$row[1]"." || "."$row[2]"; ?>"><?php echo "$row[1]"." || "."$row[2]"; ?></option>
-            <?php } ?>
-        </select>
-        <input type="submit" value="Buscar"/>
-        <br>
-
-    </form>
-
-
-
-
-
-
-<!--
-    <form class="add-new-post" method="post" action="busquedaclave.php">
         <?php
         include('mostrar-proveedores.php');
         ?>
-        <br>Clave:
-        <select id="clave" name="clave" class="mimi form-control-lg mb-12" required onchange="cambio()">
-            <option value="Seleccione Clave">Seleccione Clave</option>
+
+        Procedimiento:
+        <select id="proveedor" name="proceso" class="mimi form-control-lg mb-12" required>
+            <option value="Seleccione Proveedor">Seleccione Proceso</option>
             <?php
+            $mostrarsoloregistrados = mysqli_query($link, "SELECT * FROM catalogo_procesos");
             while ($row = mysqli_fetch_row($mostrarsoloregistrados)) {
             ?>
-                <option value="<?php echo "$row[4]"; ?>"><?php echo "$row[4]"; ?></option>
+                <option value="<?php echo "$row[1]" . " || " . "$row[2]"; ?>"><?php echo "$row[1]" . " || " . "$row[2]"; ?></option>
             <?php } ?>
         </select>
-        <input type="submit" value="Buscar"/>
+        <input type="submit" value="Buscar" />
         <br>
-        <input id="clave" style="visibility:hidden;" type="text" />
-        
+
     </form>
--->
-
-
-
-
 
 </body>
 

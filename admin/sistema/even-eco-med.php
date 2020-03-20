@@ -37,7 +37,7 @@
         
         <br>
         Procedimiento: 
-        <select id="proveedor" name="proceso" class="mimi form-control-lg mb-12" required onchange="cambio()">
+        <select id="proveedor" name="proceso" class="mimi form-control-lg mb-12" required>
             <option value="Seleccione Proveedor">Seleccione Proceso</option>
             <?php
                 $mostrarsoloregistrados= mysqli_query($link, "SELECT * FROM catalogo_procesos ");

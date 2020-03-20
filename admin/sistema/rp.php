@@ -36,7 +36,7 @@
         include('mostrar-proveedores.php');
         ?>
         <br>Proveedor:
-        <select id="proveedor" name="id" class="mimi form-control-lg mb-12" required onchange="cambio()">
+        <select id="proveedor" name="id" class="mimi form-control-lg mb-12" required>
             <option value="Seleccione Proveedor">Seleccione Proveedor</option>
             <?php
             while ($row = mysqli_fetch_row($mostrarsoloregistrados)) {
@@ -48,7 +48,7 @@
         <br>
         <input id="id" style="visibility:hidden;" type="text" />-->
         Procedimiento: 
-        <select id="proveedor" name="proceso" class="mimi form-control-lg mb-12" required onchange="cambio()">
+        <select id="proveedor" name="proceso" class="mimi form-control-lg mb-12" required>
             <option value="Seleccione Proveedor">Seleccione Proceso</option>
             <?php
                 $mostrarsoloregistrados= mysqli_query($link, "SELECT * FROM catalogo_procesos ");
@@ -73,7 +73,7 @@
         include('mostrar-proveedores.php');
         ?>
         <br>Clave:
-        <select id="clave" name="clave" class="mimi form-control-lg mb-12" required onchange="cambio()">
+        <select id="clave" name="clave" class="mimi form-control-lg mb-12" required>
             <option value="Seleccione Clave">Seleccione Clave</option>
             <?php
             while ($row = mysqli_fetch_row($mostrarsoloregistrados)) {
