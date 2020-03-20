@@ -8,6 +8,7 @@
         </h1>
         <center>
             <img  style="width:80%" src="/gpc/admin/anteriorsistema/images/home.png">
+            
         </center>
         <BR>
         <h1>
