@@ -99,8 +99,7 @@ $proceso = $_POST['proceso'];
 
                             $mostrar = mysqli_query($link, "SELECT DISTINCT * FROM medicamentos_tecnica
                             join medicamentos_economica on medicamentos_tecnica.clave12=medicamentos_economica.clave12
-                            join medicamentos_legal on medicamentos_legal.razon_social=medicamentos_economica.proveedor 
-                            where medicamentos_legal.proceso='$proceso'");
+                            where medicamentos_economica.proceso='$proceso'");
 
                             while ($row = mysqli_fetch_row($mostrar)) {
                               $v1 = (int) $row[52];
