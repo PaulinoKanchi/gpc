@@ -37,8 +37,6 @@ $proceso = $_POST['proceso'];
               <h3 class="page-title">General de Medicamentos</h3>
             </div>
           </div>
-          <div style="text-align: right;width:1700px">
-            <a href="index.php?id=<?php echo $id; ?>">Regresar</a>
             <!-- End Page Header -->
             <!-- Default Light Table -->
             <div class="row">
@@ -138,6 +136,7 @@ $proceso = $_POST['proceso'];
                         </tbody>
                       </table>
                       <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
+                      <a href="rp.php?id=<?php echo $id; ?>">Regresar</a>
                     </form>
 
                   </div>

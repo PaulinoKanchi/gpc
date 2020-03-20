@@ -20,6 +20,7 @@
 <form action=" <?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
 
 <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
+<a href="rp.php?id=<?php echo $id; ?>">Regresar</a>
 
 </form>
 
