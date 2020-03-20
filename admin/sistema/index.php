@@ -193,6 +193,9 @@ while ($row = mysqli_fetch_row($consulta)) {
                       <div>
                     <a class="dropdown-item" href="rp-general.php?id=<?php echo $id; ?>">
                       <i class="material-icons">description</i>Reporte General de Medicamentos</a>
+                      <div>
+                    <a class="dropdown-item" href="rp-oncologicos-resto.php?id=<?php echo $id; ?>">
+                      <i class="material-icons">description</i>Reporte General de Oncologicos(160)</a>
 </div>
 </li>
 
