@@ -3,18 +3,18 @@
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Licitación 2020.
+        <h1>     <center>Licitación 2020.
 
         </h1>
         <center>
-        <img  style="width:80%" src="/gpc/admin/anteriorsistema/images/home.png">
+        <img  style="width:80%" src="/gpc/admin/anteriorsistema/images/home.jpg">
         </center>
         <BR>
         <h1>
         </h1>
     </div>
 
-    <div class="body-content">
+    <div class="body-content">  
 
         <div class="row">
             <div class="col-lg-12">
