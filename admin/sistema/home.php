@@ -7,7 +7,7 @@
 
         </h1>
         <center>
-        <img  style="width:80%" src="/gpc/admin/anteriorsistema/images/home.png">
+        <img  style="width:80%" src="/gpc/admin/anteriorsistema/images/home1.png">
         </center>
         <BR>
         <h1>
