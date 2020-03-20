@@ -65,6 +65,7 @@ $proceso = $_POST['proceso'];
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Porcentaje de Abasto</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">PMR</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Precio Ofertado</th>
+                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Porcentaje de Descuento</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Técnico</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Beneficios</th>
@@ -102,8 +103,8 @@ $proceso = $_POST['proceso'];
                             where medicamentos_economica.proceso='$proceso'");
 
                             while ($row = mysqli_fetch_row($mostrar)) {
-                              $v1 = (int) $row[52];
-                              $v2 = (int) $row[48];
+                              $v1 = (int) $row[53];
+                              $v2 = (int) $row[49];
                               $porcentaje = ((($v1) / ($v2)) * 100);
                               $por=number_format($porcentaje,2,'.','');
                             ?>
@@ -121,6 +122,7 @@ $proceso = $_POST['proceso'];
                               <td> <?php echo "$por" . "%"; ?></td>
                               <td> <?php echo "$row[81]"; ?></td>
                               <td> <?php echo "$row[73]"; ?></td>
+                              <td> <?php echo "$row[83]"; ?></td>
                               <td> <?php echo "$row[29]"; ?></td>
                               <td> <?php echo "$row[30]"; ?></td>
                               <td> <?php echo "$row[40]"; ?></td>
