@@ -111,23 +111,23 @@ $proceso = $_POST['proceso'];
 
                               <td> <?php echo "$row[42]"; ?></td>
                               <td> <?php echo "$row[44]"; ?></td>
-                              <td> <?php echo "$row[45]"; ?></td>
-                              <td> <?php echo "$row[41]"; ?></td>
                               <td> <?php echo "$row[46]"; ?></td>
+                              <td> <?php echo "$row[42]"; ?></td>
                               <td> <?php echo "$row[47]"; ?></td>
                               <td> <?php echo "$row[48]"; ?></td>
-                              <td> <?php echo "$row[51]"; ?></td>
+                              <td> <?php echo "$row[49]"; ?></td>
                               <td> <?php echo "$row[52]"; ?></td>
+                              <td> <?php echo "$row[53]"; ?></td>
                               <td> <?php echo "$por" . "%"; ?></td>
-                              <td> <?php echo "$row[80]"; ?></td>
-                              <td> <?php echo "$row[72]"; ?></td>
+                              <td> <?php echo "$row[81]"; ?></td>
+                              <td> <?php echo "$row[73]"; ?></td>
                               <td> <?php echo "$row[29]"; ?></td>
                               <td> <?php echo "$row[30]"; ?></td>
                               <td> <?php echo "$row[40]"; ?></td>
                               <td> <?php echo "$row[71]"; ?></td>
                               <td> <?php echo "$row[72]"; ?></td>
-                              <td> <?php echo "$row[83]"; ?></td>
-                              <td> <?php echo "$row[91]"; ?></td>
+                              <td> <?php echo "$row[82]"; ?></td>
+                              <td> <?php echo "$row[80]"; ?></td>
                               
                           </tr>
                         <?php } ?>
