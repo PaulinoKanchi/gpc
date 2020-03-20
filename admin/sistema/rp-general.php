@@ -38,7 +38,7 @@
         <select id="proveedor" name="id" class="mimi form-control-lg mb-12" required onchange="cambio()">
             <option value="Seleccione Proveedor">Seleccione Proveedor</option>
             <?php
-            while ($row = mysqli_fetch_row($mostrarsoloregistrados)) {
+            while ($row = mysqli_fetch_row($mostrarsoloregistrados)) { 
             ?>
                 <option value="<?php echo "$row[4]"; ?>"><?php echo "$row[4]"; ?></option>
             <?php } ?>
