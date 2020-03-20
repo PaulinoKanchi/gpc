@@ -51,9 +51,10 @@ $proceso = $_POST['proceso'];
 
                     <form action="report-provedores1.php" method="POST">
 
-
-
-                      <table border="1" width="100%" id="example" class="display" style="width:100%">
+                        <button type="submit" id="export_data" name="export_data" style="display:block" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
+                        <a style="display:left" href="rp-general-prov.php?id=<?php echo $id; ?>">Regresar</a>
+                  
+                      <table border="1" width="100%" id="example" class="display" style="width:100%;">
                         <thead class="bg-light">
                           <tr>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">ID</th>
@@ -103,12 +104,6 @@ $proceso = $_POST['proceso'];
                         </tbody>
 
                       </table>
-
-
-
-
-                      <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
-                      <a href="rp.php?id=<?php echo $id; ?>">Regresar</a>
                     </form>
                   </div>
                 </div>

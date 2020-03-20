@@ -39,6 +39,9 @@ $proceso = $_POST['proceso'];
           </div>
             <!-- End Page Header -->
             <!-- Default Light Table -->
+            
+            <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
+                      <a href="rp-general.php?id=<?php echo $id; ?>">Regresar</a>
             <div class="row">
               <div class="col">
                 <div class="card card-small mb-4">
@@ -139,8 +142,6 @@ $proceso = $_POST['proceso'];
                         <?php } ?>
                         </tbody>
                       </table>
-                      <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
-                      <a href="rp-general.php?id=<?php echo $id; ?>">Regresar</a>
                     </form>
 
                   </div>

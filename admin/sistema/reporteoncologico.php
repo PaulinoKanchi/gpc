@@ -37,115 +37,117 @@ $proceso = $_POST['proceso'];
               <h3 class="page-title">General de Medicamentos Oncológicos</h3>
             </div>
           </div>
-            <!-- End Page Header -->
-            <!-- Default Light Table -->
-            <div class="row">
-              <div class="col">
-                <div class="card card-small mb-4">
+          <!-- End Page Header -->
+          <!-- Default Light Table -->
+          <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-success">Exportar a Excel</button>
+          <a class="btn btn-info" href="rp-oncologicos-resto.php?id=<?php echo $id; ?>">Regresar </a>
+          <a class="btn btn-danger" href="index.php?id=<?php echo $id; ?>">Inicio</a>
+          <div class="row">
+            <div class="col">
+              <div class="card card-small mb-4">
 
-                  <div class="card-body p-0 pb-3 text-center">
+                <div class="card-body p-0 pb-3 text-center">
 
-                    <form action="reportegeneral1.php" method="POST">
-
-
-
-                      <table border="1" width="100%" id="example" class="display" style="width:100%">
-                        <thead class="bg-light">
-                          <tr>
-
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Clave</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Partida</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Proveedor</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Descripcion</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Pais de Origen</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Minima Solicitada</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Maxima Solicitada</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Minima Ofertada</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Maxima Ofertada</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Porcentaje de Abasto</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">PMR</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Precio Ofertado</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Porcentaje de Descuento</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Técnico</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Beneficios</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Económico</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Beneficios</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Proceso</th>
-                            
+                  <form action="reportegeneral1.php" method="POST">
 
 
 
-                          </tr>
-                        </thead>
-                        <input style="display:none" type="text" name="proceso" value="<?php echo $proceso; ?>" />
-                        <tbody>
+                    <table border="1" width="100%" id="example" class="display" style="width:100%">
+                      <thead class="bg-light">
+                        <tr>
 
-                          <tr>
-                            <?php
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Clave</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Partida</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Proveedor</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Descripcion</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Pais de Origen</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Minima Solicitada</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Maxima Solicitada</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Minima Ofertada</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Cantidad Maxima Ofertada</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Porcentaje de Abasto</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">PMR</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Precio Ofertado</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Porcentaje de Descuento</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Técnico</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Beneficios</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Económico</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Beneficios</th>
+                          <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Proceso</th>
 
-                            include_once('conexiondb.php');
-                            $conn = new Conexion();
-                            $link = $conn->conectarse();
 
-                            //$proveedor=$_POST['proveedor'];
 
-                            /*$mostrar = mysqli_query($link, "SELECT * FROM medicamentos_tecnica
+
+                        </tr>
+                      </thead>
+                      <input style="display:none" type="text" name="proceso" value="<?php echo $proceso; ?>" />
+                      <tbody>
+
+                        <tr>
+                          <?php
+
+                          include_once('conexiondb.php');
+                          $conn = new Conexion();
+                          $link = $conn->conectarse();
+
+                          //$proveedor=$_POST['proveedor'];
+
+                          /*$mostrar = mysqli_query($link, "SELECT * FROM medicamentos_tecnica
                              join medicamentos_economica on medicamentos_tecnica.clave12=medicamentos_economica.clave12
                              join medicamentos_legal on medicamentos_legal.razon_social=medicamentos_economica.proveedor and 
                              medicamentos_legal.razon_social=medicamentos_tecnica.proveedor and 
                              medicamentos_economica.proveedor=medicamentos_tecnica.proveedor
                              where medicamentos_legal.proceso='$proceso'");*/
 
-                            $mostrar = mysqli_query($link, "SELECT DISTINCT * FROM medicamentos_tecnica
+                          $mostrar = mysqli_query($link, "SELECT DISTINCT * FROM medicamentos_tecnica
                             join medicamentos_economica on medicamentos_tecnica.clave12=medicamentos_economica.clave12
                             where medicamentos_economica.proceso='$proceso'");
 
-                            while ($row = mysqli_fetch_row($mostrar)) {
-                              $v1 = (int) $row[53];
-                              $v2 = (int) $row[49];
-                              $porcentaje = ((($v1) / ($v2)) * 100);
-                              $por=number_format($porcentaje,2,'.','');
-                            ?>
+                          while ($row = mysqli_fetch_row($mostrar)) {
+                            $v1 = (int) $row[53];
+                            $v2 = (int) $row[49];
+                            $porcentaje = ((($v1) / ($v2)) * 100);
+                            $por = number_format($porcentaje, 2, '.', '');
+                          ?>
 
 
-                              <td> <?php echo "$row[42]"; ?></td>
-                              <td> <?php echo "$row[44]"; ?></td>
-                              <td> <?php echo "$row[46]"; ?></td>
-                              <td> <?php echo "$row[42]"; ?></td>
-                              <td> <?php echo "$row[47]"; ?></td>
-                              <td> <?php echo "$row[48]"; ?></td>
-                              <td> <?php echo "$row[49]"; ?></td>
-                              <td> <?php echo "$row[52]"; ?></td>
-                              <td> <?php echo "$row[53]"; ?></td>
-                              <td> <?php echo "$por" . "%"; ?></td>
-                              <td> <?php echo "$row[81]"; ?></td>
-                              <td> <?php echo "$row[73]"; ?></td>
-                              <td> <?php echo "$row[83]"; ?></td>
-                              <td> <?php echo "$row[29]"; ?></td>
-                              <td> <?php echo "$row[30]"; ?></td>
-                              <td> <?php echo "$row[40]"; ?></td>
-                              <td> <?php echo "$row[71]"; ?></td>
-                              <td> <?php echo "$row[72]"; ?></td>
-                              <td> <?php echo "$row[82]"; ?></td>
-                              <td> <?php echo "$row[80]"; ?></td>
-                              
-                          </tr>
-                        <?php } ?>
-                        </tbody>
-                      </table>
-                      <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
-                      <a href="rp.php?id=<?php echo $id; ?>">Regresar</a>
-                    </form>
+                            <td> <?php echo "$row[42]"; ?></td>
+                            <td> <?php echo "$row[44]"; ?></td>
+                            <td> <?php echo "$row[46]"; ?></td>
+                            <td> <?php echo "$row[42]"; ?></td>
+                            <td> <?php echo "$row[47]"; ?></td>
+                            <td> <?php echo "$row[48]"; ?></td>
+                            <td> <?php echo "$row[49]"; ?></td>
+                            <td> <?php echo "$row[52]"; ?></td>
+                            <td> <?php echo "$row[53]"; ?></td>
+                            <td> <?php echo "$por" . "%"; ?></td>
+                            <td> <?php echo "$row[81]"; ?></td>
+                            <td> <?php echo "$row[73]"; ?></td>
+                            <td> <?php echo "$row[83]"; ?></td>
+                            <td> <?php echo "$row[29]"; ?></td>
+                            <td> <?php echo "$row[30]"; ?></td>
+                            <td> <?php echo "$row[40]"; ?></td>
+                            <td> <?php echo "$row[71]"; ?></td>
+                            <td> <?php echo "$row[72]"; ?></td>
+                            <td> <?php echo "$row[82]"; ?></td>
+                            <td> <?php echo "$row[80]"; ?></td>
 
-                  </div>
+                        </tr>
+                      <?php } ?>
+                      </tbody>
+                    </table>
+
+                  </form>
+
                 </div>
               </div>
             </div>
-            <!-- End Default Light Table -->
-
           </div>
+          <!-- End Default Light Table -->
+
+        </div>
       </main>
     </div>
   </div>
