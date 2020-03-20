@@ -71,8 +71,8 @@ $proceso = $_POST['proceso'];
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Económico</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
                             <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Beneficios</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Dictamen Legal</th>
-                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Comentarios</th>
+                            <th style="background-color: #9F2241;color:white;" scope="col" class="border-1">Proceso</th>
+                            
 
 
 
@@ -124,12 +124,11 @@ $proceso = $_POST['proceso'];
                               <td> <?php echo "$row[29]"; ?></td>
                               <td> <?php echo "$row[30]"; ?></td>
                               <td> <?php echo "$row[40]"; ?></td>
-
                               <td> <?php echo "$row[71]"; ?></td>
                               <td> <?php echo "$row[72]"; ?></td>
                               <td> <?php echo "$row[83]"; ?></td>
-                              <td> <?php echo "$row[105]"; ?></td>
-                              <td> <?php echo "$row[106]"; ?></td>
+                              <td> <?php echo "$row[91]"; ?></td>
+                              
                           </tr>
                         <?php } ?>
                         </tbody>
