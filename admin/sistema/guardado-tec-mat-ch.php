@@ -33,13 +33,16 @@ while ($row = mysqli_fetch_row($mostrar1)) {
 if($clave12==""){
   $ck=1;
 }
-if($ck==1){
+if($ck==2){
 
+  
 
   echo'<script type="text/javascript">
   alert("Esa Evaluación ya se Encuentra Realizada, por Favor Intenta con Otra") ;
-  window.location.href="javascript:window.history.back();";
+  
+  
   </script>';
+  
   $ck=0;
 }else if($proveedor=="Seleccione Proveedor"){
 echo'<script type="text/javascript">
@@ -52,7 +55,15 @@ window.location.href="javascript:window.history.back();";
 }
 ?>
 
+<script>
 
+if(<?php echo $ck?>==1){
+  alert("Esa Evaluación ya se Encuentra Realizada, por Favor Intenta con Otra") ;
+  window.location.href = "eva-tec-mat-ch.php?id=<?php echo $id?>";
+
+}
+
+</script>
 
               
                   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

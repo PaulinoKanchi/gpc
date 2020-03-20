@@ -25,7 +25,7 @@ while ($row = mysqli_fetch_row($mostrar1)) {
     $ck = 1;
   }
 }
-if ($ck == 1) {
+if ($ck == 2) {
 
   echo '<script type="text/javascript">
     alert("Esa Evaluación ya se Encuentra Realizada, por Favor Intenta con Otra") ;
@@ -38,6 +38,15 @@ if ($ck == 1) {
 }
 ?>
 
+<script>
+
+if(<?php echo $ck?>==1){
+  alert("Esa Evaluación ya se Encuentra Realizada, por Favor Intenta con Otra") ;
+  window.location.href = "eva-eco-mat-ch.php?id=<?php echo $id?>";
+
+}
+
+</script>
 
 
 
