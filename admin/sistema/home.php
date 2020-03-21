@@ -10,7 +10,7 @@ background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,0.8
 background: -o-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,0.88) 44%, rgba(109,0,25,0.72) 100%);
 background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,0.88) 44%, rgba(109,0,25,0.72) 100%);
 background: linear-gradient(to right, rgba(169,3,41,1) 0%, rgba(143,2,34,0.88) 44%, rgba(109,0,25,0.72) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );;color:white;" >     <center >Licitación 2020</center></font>
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019', GradientType=1 );color:white" >     <center >Licitación 2020</center></font>
 
         </h1>
         <center>
